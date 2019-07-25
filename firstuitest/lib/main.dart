@@ -5,7 +5,8 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
-///中间的title视图
+
+  ///中间的title视图
   Widget build(BuildContext context) {
     Widget titleSection = new Container(
       padding: const EdgeInsets.all(32.0),
@@ -41,7 +42,8 @@ class MyApp extends StatelessWidget {
         ],
       ),
     );
-  ///创建button的方式
+
+    ///创建button的方式
     Column buildButtonColumn(IconData icon, String label) {
       Color color = Theme.of(context).primaryColor;
 
@@ -76,7 +78,8 @@ class MyApp extends StatelessWidget {
         ],
       ),
     );
-  ///最下边文本视图
+
+    ///最下边文本视图
     Widget textSection = new Container(
       padding: const EdgeInsets.all(32.0),
       child: new Text(
@@ -104,7 +107,6 @@ Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situate
               // width: 600.0,
               height: 240.0,
               fit: BoxFit.cover,
-              
             ),
             titleSection,
             buttonSection,
